@@ -33,6 +33,7 @@ Replace the XXX with your windows users name, also reaplce the '/mnt/f/Debian/.s
 
 ```
 wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/init.sh | WINDOWS_USER=XXX PATH_TO_SSH=/mnt/f/Debian/.ssh/ bash -
+chsh -s /usr/bin/fish
 ``` 
  
  ## Setup without SSH keys
@@ -41,6 +42,7 @@ Replace the XXX with your windows users name then execute this statement
 
 ```
 wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/init.sh | WINDOWS_USER=XXX bash -
+chsh -s /usr/bin/fish
 ```
 
 # Next steps
