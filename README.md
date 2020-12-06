@@ -14,3 +14,4 @@ Preparations on the Windows side:
 
 * If not done yet, start "Debian" from the Windows Start menu once (close when you see the shell ready)
 * Start Windows Terminal and select "Debian" from the profile menu
+* Exec `sudo apt update && sudo apt install -y wget`
