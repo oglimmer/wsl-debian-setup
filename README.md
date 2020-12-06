@@ -19,6 +19,7 @@ Preparations on the Windows side:
 * Install https://visualstudio.microsoft.com/
 * Install https://www.microsoft.com/en-us/p/debian/9msvkqc78pk6
 * Install https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701
+* Install https://sourceforge.net/projects/vcxsrv/
 
 # WSL VM with Debian - ready to dev
 
@@ -40,4 +41,24 @@ Replace the XXX with your windows users name then execute this statement
 
 ```
 wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/init.sh | WINDOWS_USER=XXX bash -
+```
+
+# Next steps
+
+* After closing the current Windows Terminal shell and re-opening one (to get a fish shell instead of bash)
+* Make sure you've X Server from VcXsrv started (use all the defaults except for "remove native opengl" and "add disable access control"
+* Possible first commands:
+
+```
+gnome-terminal
+
+/opt/idea/bin/idea.sh &
+
+chromium &
+
+firefox &
+
+nautilus / &
+
+meld
 ```
