@@ -2,8 +2,12 @@
 
 set -eu
 
-WINDOWS_USER=$1
-PATH_TO_SSH=${2:-}
+if [ -z "$WINDOWS_USER" ]; then
+  WINDOWS_USER=$1
+fi
+if [ -z "$PATH_TO_SSH" ]; then
+  PATH_TO_SSH=${2:-}
+fi
 
 sudo apt update
 
@@ -70,7 +74,7 @@ function fish_prompt
 end
 EOF
 
-if [ -d "$PATH_TO_SSH" ]; 
+if [ -d "$PATH_TO_SSH" ]; then
   cp -r $PATH_TO_SSH/* ~/.ssh
   chmod 600 ~/.ssh/id_rsa*
 fi
