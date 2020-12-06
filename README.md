@@ -15,3 +15,19 @@ Preparations on the Windows side:
 * If not done yet, start "Debian" from the Windows Start menu once (close when you see the shell ready)
 * Start Windows Terminal and select "Debian" from the profile menu
 * Exec `sudo apt update && sudo apt install -y wget`
+
+## Setup incl. copying SSH keys
+
+Replace the XXX with your windows users name, also reaplce the '/mnt/f/Debian/.ssh/', then execute this statement
+
+```
+wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/init.sh | WINDOWS_USER=XXX PATH_TO_SSH=/mnt/f/Debian/.ssh/ bash -
+``` 
+ 
+ ## Setup without SSH keys
+
+Replace the XXX with your windows users name then execute this statement
+
+```
+wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/init.sh | WINDOWS_USER=XXX bash -
+```
