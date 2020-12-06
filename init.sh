@@ -15,17 +15,7 @@ sudo apt -y upgrade
 
 sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget chromium curl gcc g++ make jq fish
 
-sudo tasksel install gnome-desktop
-
 cd $HOME
-
-curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-wget -O - https://download-cf.jetbrains.com/idea/ideaIC-2020.2.3.tar.gz | tar zxf -
-sudo mv idea-IC* /opt/idea
-
-sudo npm -g install jwt-cli
 
 chsh -s /usr/bin/fish
 
@@ -162,5 +152,21 @@ vnoremap <Space> zf
 autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview"
 EOF
+
+# Node TLS and tools
+
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+sudo npm -g install jwt-cli
+
+# download IntelliJ
+
+wget -O - https://download-cf.jetbrains.com/idea/ideaIC-2020.2.3.tar.gz | tar zxf -
+sudo mv idea-IC* /opt/idea
+
+# at the end: long running setup gnome-desktop 
+
+sudo tasksel install gnome-desktop
 
 sudo chown -R $USER:$USER ~/.cache
