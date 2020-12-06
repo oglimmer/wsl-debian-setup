@@ -17,6 +17,8 @@ sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget c
 
 sudo tasksel install gnome-desktop
 
+cd $HOME
+
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
