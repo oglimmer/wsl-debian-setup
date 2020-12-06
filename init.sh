@@ -165,3 +165,4 @@ autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview"
 EOF
 
+sudo chown -R $USER:$USER ~/.cache
