@@ -22,10 +22,8 @@ cd $HOME
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-wget https://download-cf.jetbrains.com/idea/ideaIC-2020.2.3.tar.gz
-gzip -d ideaIC-2020.2.3.tar.gz
-tar xf ideaIC-2020.2.3.tar
-sudo mv idea-IC-202.7660.26 /opt/idea
+wget -O - https://download-cf.jetbrains.com/idea/ideaIC-2020.2.3.tar.gz | tar zxf -
+sudo mv idea-IC* /opt/idea
 
 sudo npm -g install jwt-cli
 
