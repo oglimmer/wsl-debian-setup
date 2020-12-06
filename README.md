@@ -46,7 +46,7 @@ wget -O - https://raw.githubusercontent.com/oglimmer/wsl-debian-setup/master/ini
 # Next steps
 
 * After closing the current Windows Terminal shell and re-opening one (to get a fish shell instead of bash)
-* Make sure you've X Server from VcXsrv started (use all the defaults except for "remove native opengl" and "add disable access control"
+* Make sure you've X Server from VcXsrv started (see [this article](https://oglimmer.medium.com/a-working-wsl-2-ubuntu-development-setup-332e64034e5) for details. Keep in mind to change the Windows Firewall!)
 * Possible first commands:
 
 ```
