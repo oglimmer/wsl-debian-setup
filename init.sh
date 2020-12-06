@@ -17,8 +17,6 @@ sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget c
 
 cd $HOME
 
-chsh -s /usr/bin/fish
-
 mkdir -p ~/.config/fish/functions/
 wget https://gitlab.com/kyb/fish_ssh_agent/raw/master/functions/fish_ssh_agent.fish -P ~/.config/fish/functions/
 
@@ -170,3 +168,9 @@ sudo mv idea-IC* /opt/idea
 sudo tasksel install gnome-desktop
 
 sudo chown -R $USER:$USER ~/.cache
+
+echo "************************************"
+echo "setup completed."
+echo
+echo "Switch to fish:"
+echo "chsh -s /usr/bin/fish"
