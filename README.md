@@ -62,3 +62,5 @@ nautilus / &
 
 meld
 ```
+
+* Change the settings in Windows Terminal. Add "startingDirectory": "//wsl$/Debian/home/oli" to change the initial directory and change defaultProfile to Debian's UUID
