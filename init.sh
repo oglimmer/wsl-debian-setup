@@ -2,10 +2,10 @@
 
 set -eu
 
-if [ -z "$WINDOWS_USER" ]; then
+if [ -z "${WINDOWS_USER:-}" ]; then
   WINDOWS_USER=$1
 fi
-if [ -z "$PATH_TO_SSH" ]; then
+if [ -z "${PATH_TO_SSH:-}" ]; then
   PATH_TO_SSH=${2:-}
 fi
 
