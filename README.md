@@ -94,3 +94,34 @@ Example settings:
         ]
     }
 ```
+
+## VcXsrv setup
+
+To easily start the X11 Server under Windows, create a file called "x11-startup.xlaunch" at a convienent location under Windows. Add this content:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<XLaunch 
+    WindowMode="MultiWindow" 
+    ClientMode="NoClient"
+    LocalClient="False"
+    Display="-1"
+    LocalProgram="xcalc"
+    RemoteProgram="xterm"
+    RemotePassword=""
+    PrivateKey=""
+    RemoteHost=""
+    RemoteUser=""
+    XDMCPHost=""
+    XDMCPBroadcast="False"
+    XDMCPIndirect="False"
+    Clipboard="True"
+    ClipboardPrimary="False"
+    ExtraParams=""
+    Wgl="True"
+    DisableAC="True"
+    XDMCPTerminate="False"
+/>
+```
+
+Go to `C:\Users\<WINDOWS_USER_NAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs` and create a Windows Shortcuts file here. For maximum convenience go to your Start Menu, right click the new entry "x11-startup" and click "Pin To Start".
