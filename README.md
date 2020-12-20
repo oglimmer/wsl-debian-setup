@@ -65,4 +65,32 @@ nautilus / &
 meld
 ```
 
-* Change the settings in Windows Terminal. Add "startingDirectory": "//wsl$/Debian/home/oli" to change the initial directory and change defaultProfile to Debian's UUID
+## Windows Terminal setup
+
+Change the settings in Windows Terminal:
+
+* Add a "startingDirectory": "//wsl$/Debian/home/oli" to change the initial directory
+* Change the defaultProfile to Debian's UUID to avoid the first windows always creates a PowerShell
+* Add a "commandline": "wsl -d Debian -- gnome-terminal && /usr/bin/fish" to automatically start the gnome terminal
+
+Example settings:
+
+```
+    "profiles":
+    {
+        "defaults":
+        {
+        },
+        "list":
+        [
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                "commandline": "wsl -d Debian -- gnome-terminal && /usr/bin/fish",
+                "startingDirectory": "//wsl$/Debian/home/oli"
+            }
+        ]
+    }
+```
