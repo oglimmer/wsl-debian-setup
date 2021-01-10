@@ -33,6 +33,8 @@ Preparations on the Windows side:
 
 # WSL VM with Debian - ready to dev
 
+* Make sure Visual Studio Code has the "Remote - WSL" extension installed
+* Make sure "wsl" is set to version 2 (hint: PowerShell type "wsl --set-default-version 2")
 * If not done yet, start "Debian" from the Windows Start menu once (close when you see the shell ready)
 * Start Windows Terminal and select "Debian" from the profile menu
 * Exec `sudo apt update && sudo apt install -y wget`
