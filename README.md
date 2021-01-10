@@ -21,6 +21,16 @@ Preparations on the Windows side:
 * Install https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701
 * Install https://sourceforge.net/projects/vcxsrv/
 
+## Prerequisites - Checklist and links
+
+* Windows features: WSL & Virtual Machine Platform
+* Kernel: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+* Debian from MS Store: https://www.microsoft.com/store/apps/9MSVKQC78PK6
+* Windows Terminal from MS Store: https://aka.ms/terminal
+* Docker: https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+* Visual Studio Code: https://code.visualstudio.com/docs/?dv=win
+* VcXsrv: https://sourceforge.net/projects/vcxsrv/files/latest/download
+
 # WSL VM with Debian - ready to dev
 
 * If not done yet, start "Debian" from the Windows Start menu once (close when you see the shell ready)
