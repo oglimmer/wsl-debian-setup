@@ -1,5 +1,7 @@
 # WSL 2 DEV setup on Debian
 
+A video walking through this setup process: https://www.youtube.com/watch?v=BN25yMidwy4
+
 What is does:
 
 * ssh-agent
