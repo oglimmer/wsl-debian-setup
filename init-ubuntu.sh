@@ -13,7 +13,7 @@ sudo apt update
 
 sudo apt -y upgrade
 
-sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget curl gcc g++ make jq fish meld
+sudo apt install -y git tasksel net-tools openjdk-11-jdk maven gradle wget curl gcc g++ make jq fish meld
 
 sudo add-apt-repository ppa:xalt7x/chromium-deb-vaapi
 
@@ -28,6 +28,11 @@ sudo apt update
 sudo apt install chromium-browser chromium-codecs-ffmpeg-extra
 
 cd $HOME
+
+wget https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
+unzip exa-linux-x86_64-0.9.0.zip
+sudo mv exa-linux-x86_64 /usr/local/bin/exa
+rm exa-linux-x86_64-0.9.0.zip
 
 mkdir -p ~/.config/fish/functions/
 wget https://gitlab.com/kyb/fish_ssh_agent/raw/master/functions/fish_ssh_agent.fish -P ~/.config/fish/functions/
@@ -177,7 +182,7 @@ sudo mv idea-IC* /opt/idea
 
 # at the end: long running setup gnome-desktop 
 
-sudo tasksel install gnome-desktop
+sudo tasksel install ubuntu-desktop
 
 echo "************************************"
 echo "setup completed."
