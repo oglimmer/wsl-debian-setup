@@ -6,7 +6,7 @@ What is does:
 
 * ssh-agent
 * a proper DISPLAY env variable
-* IntelliJ IDEA ultimate Version 2020.2.3
+* IntelliJ IDEA Community Version 2020.2.3
 * fish shell with alias for ls=exa
 * JDK 11, maven, gradle
 * Node LTS
