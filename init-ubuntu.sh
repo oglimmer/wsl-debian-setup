@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 
 if [ -z "${WINDOWS_USER:-}" ]; then
   WINDOWS_USER=$1
