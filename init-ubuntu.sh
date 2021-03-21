@@ -13,7 +13,7 @@ sudo apt update
 
 sudo apt -y upgrade
 
-sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget chromium curl gcc g++ make jq fish meld
+sudo apt install -y git tasksel net-tools exa openjdk-11-jdk maven gradle wget curl gcc g++ make jq fish meld
 
 sudo add-apt-repository ppa:xalt7x/chromium-deb-vaapi
 
