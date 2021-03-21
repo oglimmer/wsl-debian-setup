@@ -9,6 +9,8 @@ if [ -z "${PATH_TO_SSH:-}" ]; then
   PATH_TO_SSH=${2:-}
 fi
 
+cd $HOME
+
 sudo apt update
 
 sudo apt -y upgrade
@@ -26,8 +28,6 @@ EOF
 sudo apt update
 
 sudo apt install chromium-browser chromium-codecs-ffmpeg-extra
-
-cd $HOME
 
 wget https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
 unzip exa-linux-x86_64-0.9.0.zip
