@@ -27,7 +27,13 @@ sudo apt update
 
 sudo apt install chromium-browser chromium-codecs-ffmpeg-extra
 
+pwd
+
+echo $HOME
+
 cd $HOME
+
+pwd
 
 wget https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
 unzip exa-linux-x86_64-0.9.0.zip
