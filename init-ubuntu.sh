@@ -1,6 +1,10 @@
 #!/bin/bash
 
-#set -eu
+#
+# this script will stop with an error, just restart it.
+#
+
+set -eu
 
 if [ -z "${WINDOWS_USER:-}" ]; then
   WINDOWS_USER=$1
