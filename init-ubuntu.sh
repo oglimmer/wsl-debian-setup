@@ -179,11 +179,6 @@ sudo mv idea-IC* /opt/idea
 
 sudo tasksel install gnome-desktop
 
-# just ensure that ~/.cache is owned by the user
-
-mkdir ~/.cache
-sudo chown -R $USER:$USER ~/.cache
-
 echo "************************************"
 echo "setup completed."
 echo
