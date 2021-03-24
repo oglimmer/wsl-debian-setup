@@ -169,7 +169,7 @@ sudo tasksel install gnome-desktop
 
 # just ensure that ~/.cache is owned by the user
 
-mkdir ~/.cache
+mkdir -p ~/.cache
 sudo chown -R $USER:$USER ~/.cache
 
 echo "************************************"
